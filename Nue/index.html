@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        .button {
+            width: 50%;
+            padding: 1%;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hi, Welcome to Nue</h1>
+    <div>
+        <p>
+            Nue is a package that converts your blank looking page into a webpage with stunning look. It makes use of the background color and shadows of elements to produce clean and stunning looking webpage.         
+        </p>
+        <p>
+            For Example, look at this webpage. It looks boring, without any styles applied to it. Press the button below and see the magic.
+        </p>
+        <button onclick="applyNueLocal()">Click to apply Nue</button>
+        <br><br>
+        <p>
+            The buttons still look ugly. Now Click the button below, to make them interesting.
+        </p>
+        <button onclick="makeButtonsInteresting()">Make buttons interesting</button>
+        <br><br>
+        <p>
+            Wow, good job! Now look at these form input elements. The look beautiful, but say you want to remove Nue from these elements, Click the following button.
+        </p>
+        <button onclick="removeNueFromFormInputs()">Remove Nue from form input</button>
+        <br><br>
+        <p>
+            Now let us move the light source around to change the directions of the shadow.
+        </p>
+        <div class="row">
+            <button class="col-sm-3 col-xs-3 col-md-3 col-lg-3" onclick="applyNueWithLS('T')">Top</button>
+            <button class="col-sm-3 col-xs-3 col-md-3 col-lg-3" onclick="applyNueWithLS('TR')">Top Right</button>
+            <button class="col-sm-3 col-xs-3 col-md-3 col-lg-3" onclick="applyNueWithLS('R')">Right</button>
+            <button class="col-sm-3 col-xs-3 col-md-3 col-lg-3" onclick="applyNueWithLS('BR')">Bottom Right</button>
+        </div>
+        <div class="row">
+            <button class="col-sm-3 col-xs-3 col-md-3 col-lg-3" onclick="applyNueWithLS('B')">Bottom</button>
+            <button class="col-sm-3 col-xs-3 col-md-3 col-lg-3"  onclick="applyNueWithLS('BL')">Bottom Left</button>
+            <button class="col-sm-3 col-xs-3 col-md-3 col-lg-3" onclick="applyNueWithLS('L')">Left</button>
+            <button class="col-sm-3 col-xs-3 col-md-3 col-lg-3" onclick="applyNueWithLS('TL')">Top Left</button>
+        </div>
+    </div>
+
+    <form action="">
+        <div>
+            <div class="row">
+                <span class="col-xs-4 col-sm-4 col-md-4 col-lg-4">Name: </span><input class="col-xs-8 col-sm-8 col-md-8 col-lg-8" type="text" placeholder="Name">
+            </div>
+            <div class="row">
+                <span class="col-xs-4 col-sm-4 col-md-4 col-lg-4">Email: </span><input class="col-xs-8 col-sm-8 col-md-8 col-lg-8" type="text" placeholder="Email">
+            </div>
+            <div class="row">
+                <span class="col-xs-4 col-sm-4 col-md-4 col-lg-4">Password: </span><input class="col-xs-8 col-sm-8 col-md-8 col-lg-8" type="text" placeholder="Password">
+            </div>
+            <br>
+            <input type="submit" class="button">
+            <br><br>
+        </div>
+    </form>
+    <script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
